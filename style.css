@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a2f7e7;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    /* display: inline-block; */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 650px;
+    /* height: 600px; */
+    max-width: 100%;
+}
+
+.header{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header h1{
+    margin: 10px;
+    text-align: center;
+}
+
+.form .form-input{
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control{
+    margin-bottom: 10px ;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 16rem;
+    /* width: 100%; */
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden; 
+}
+
+.form-control.success i.fa-check-circle{
+    color:#2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+button{
+    background-color: #a2f7e7;
+    border: 2px solid #a2f7e7;
+    border-radius:  4px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+}
